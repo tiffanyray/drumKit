@@ -6,25 +6,26 @@
     <meta name="author" content="Tiffany Ray" />
     <meta name="description" content="drumkit player by pressing keys" />
     <meta charset="UTF-8" />
+    <link href="style.css" rel="stylesheet" />
 </head>
 
 <body>
     <div class="keys">
         <div data-key="65" class="key">
             <kbd>A</kbd>
-            <p>Hihat</p>
+            <p class="sound">Hihat</p>
         </div>
         <div data-key="83" class="key">
             <kbd>S</kbd>
-            <p>Impact</p>
+            <p class="sound">Impact</p>
         </div>
         <div data-key="68" class="key">
             <kbd>D</kbd>
-            <p>Club Kick</p>
+            <p class="sound">Club Kick</p>
         </div>
         <div data-key="70" class="key">
             <kbd>F</kbd>
-            <p>Hard Kick</p>
+            <p class="sound">Hard Kick</p>
         </div>
         <div data-key="71" class="key">
             <kbd>G</kbd>
@@ -32,19 +33,19 @@
         </div>
         <div data-key="72" class="key">
             <kbd>H</kbd>
-            <p>Ride</p>
+            <p class="sound">Ride</p>
         </div>
         <div data-key="74" class="key">
             <kbd>J</kbd>
-            <p>Light Snare</p>
+            <p class="sound">Light Snare</p>
         </div>
         <div data-key="75" class="key">
             <kbd>K</kbd>
-            <p>Big Snare</p>
+            <p class="sound">Big Snare</p>
         </div>
         <div data-key="76" class="key">
             <kbd>L</kbd>
-            <p>Tambourine</p>
+            <p class="sound">Tambourine</p>
         </div>
     </div>
 
@@ -57,6 +58,9 @@
     <audio data-key="74" src="sounds/Snare_03.wav"></audio>
     <audio data-key="75" src="sounds/Snare_Bigroom_03.wav"></audio>
     <audio data-key="76" src="sounds/Tambourine_02.wav"></audio>
+
+
+    <script src="script.js"></script>
 </body>
 
 </html>
