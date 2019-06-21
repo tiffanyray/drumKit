@@ -9,15 +9,10 @@ const playSound = ({ keyCode }) => {
     audio.play();
 }
 
-const removeTransition = (e) => {
-    if (e.propertyName !== 'transform') {
-        return
-    }
-    this.classList.remove('playing');
-};
+const removeTransition = (e) => e.target.classList.remove('playing');
 
 const keys = document.querySelectorAll('.key');
 
-keys.forEach(key => key.addEventListener('transitionend', removeTransition))
+keys.forEach(key => key.addEventListener('animationend', removeTransition))
 
 window.addEventListener("keydown", playSound);
